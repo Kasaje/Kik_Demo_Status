@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body >
+    <div  id="show" style=" position: absolute; margin: 120px 0 0 150px;">
+    </div>
+    <div id="area1" style="margin: 150px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+    <div id="area2" style="margin: 400px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+    <div style="display: flex;">
+        <div style="margin-top: 15vh; display: flex; ">
+            <img style="cursor: pointer;" onclick="show_status1()" src="img/image.png" width="120px" alt="">
+            <div id="status1"></div>
+            <div id="free1"></div>
+            <div id="unfree1"></div>
+            <div id="unavailable1"></div>
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div style="margin-top: 15vh; display: flex; ">
+            <img style="cursor: pointer;" onclick="update_status2()" src="img/image.png" width="120px" alt="">
+            <div id="free2"></div>
+            <div id="unfree2"></div>
+            <div id="unavailable2"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
