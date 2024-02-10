@@ -7,28 +7,130 @@
     <title>Document</title>
 </head>
 <body >
-    <div  id="show" style=" position: absolute; margin: 120px 0 0 150px;">
+
+    <!-- เครื่องซักผ้า -->
+    <div style="display: flex; justify-content: center;">
+        <p style="position: absolute; background-color: black; margin-top: 105px ; width: 5px; height: 80%; border-radius: 25px;"></p>
     </div>
-    <div id="area1" style="margin: 150px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
-    <div id="area2" style="margin: 400px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
-    <div style="display: flex;">
-        <div style="margin-top: 15vh; display: flex; ">
-            <img style="cursor: pointer;" onclick="show_status1()" src="img/image.png" width="120px" alt="">
-            <div id="status1"></div>
-            <div id="free1"></div>
-            <div id="unfree1"></div>
-            <div id="unavailable1"></div>
+
+    <div style="display: flex; justify-content: center; font-size: xx-large;"><p>สถานะสิ่งอำนวยความสะดวก</p></div>
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 45%; height: 40px; font-size: x-large; padding-top: 0.5%; background-color: aquamarine; margin-right: 2%; text-align: center;">
+            เครื่องซักผ้า
+        </div>
+        <div style="width: 45%; height: 40px; font-size: x-large; padding-top: 0.5%; background-color: aquamarine; margin-left: 2%; text-align: center;">
+            เครื่องกดน้ำ
         </div>
     </div>
-    <div style="display: flex;">
-        <div style="margin-top: 15vh; display: flex; ">
-            <img style="cursor: pointer;" onclick="update_status2()" src="img/image.png" width="120px" alt="">
-            <div id="free2"></div>
-            <div id="unfree2"></div>
-            <div id="unavailable2"></div>
+    <!-- เครื่องซักผ้าถังที่ 1 -->
+    <div style="position: absolute; margin: 0 0 0 160px;">
+        <div  id="s1" style=" position: absolute; margin: 120px 0 0 150px;">
+        </div>
+        <div id="area1" style="margin: 150px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+        <div style="display: flex;">
+            <div style="margin-top: 15vh; display: flex; ">
+                <img style="cursor: pointer;" onclick="show_status1()" src="img/image.png" width="120px" alt="">
+                <div id="icon_status1"></div>
+            </div>
         </div>
     </div>
 
+    <!-- เครื่องซักผ้าถังที่ 2 -->
+    <div style="position: absolute; margin: 0 0 0 470px;">
+        <div  id="s2" style=" position: absolute; margin: 120px 0 0 150px;">
+        </div>
+        <div id="area2" style="margin: 150px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+        <div style="display: flex;">
+            <div style="margin-top: 15vh; display: flex; ">
+                <img style="cursor: pointer;" onclick="show_status2()" src="img/image.png" width="120px" alt="">
+                <div id="icon_status2"></div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- เครื่องซักผ้าถังที่ 3 -->
+        <div style="position: absolute; margin: 230px 0 0 160px;">
+            <div  id="s3" style=" position: absolute; margin: 120px 0 0 150px;">
+            </div>
+            <div id="area3" style="margin: 150px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+            <div style="display: flex;">
+                <div style="margin-top: 15vh; display: flex; ">
+                    <img style="cursor: pointer;" onclick="show_status3()" src="img/image.png" width="120px" alt="">
+                    <div id="icon_status3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- เครื่องซักผ้าถังที่ 4 -->
+        <div style="position: absolute; margin: 230px 0 0 470px;">
+            <div  id="s4" style=" position: absolute; margin: 120px 0 0 150px;">
+            </div>
+            <div id="area4" style="margin: 150px 0 0 150px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+            <div style="display: flex;">
+                <div style="margin-top: 15vh; display: flex; ">
+                    <img style="cursor: pointer;" onclick="show_status4()" src="img/image.png" width="120px" alt="">
+                    <div id="icon_status4"></div>
+                </div>
+            </div>
+        </div>
+
+            <!-- เครื่องกดน้ำ -->
+
+    <!-- เครื่องกดน้ำที่ 1 -->
+    <div style="position: absolute; margin: -35px 0 0 850px;">
+        <div  id="s5" style=" position: absolute; margin: 150px 0 0 190px;">
+        </div>
+        <div id="area5" style="margin: 180px 0 0 190px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+        <div style="display: flex;">
+            <div style="margin-top: 15vh; display: flex; ">
+                <img style="cursor: pointer;" onclick="show_status5()" src="img/image1.png" width="250px" alt="">
+                <div style="margin-top: 35px; margin-left: -90px;" id="icon_status5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- เครื่องซักผ้าถังที่ 2 -->
+    <div style="position: absolute; margin: -35px 0 0 1150px;">
+        <div  id="s6" style=" position: absolute; margin: 150px 0 0 180px;">
+        </div>
+        <div id="area6" style="margin: 180px 0 0 200px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+        <div style="display: flex;">
+            <div style="margin-top: 15vh; display: flex; ">
+                <img style="cursor: pointer;" onclick="show_status6()" src="img/image1.png" width="250px" alt="">
+                <div style="margin-top: 35px; margin-left: -90px;" id="icon_status6"></div>
+            </div>
+        </div>
+    </div>
+
+        <!-- เครื่องกดน้ำที่ 3 -->
+        <div style="position: absolute; margin: -35px 0 0 850px;">
+            <div  id="s7" style=" position: absolute; margin: 370px 0 0 190px;">
+            </div>
+            <div id="area7" style="margin: 400px 0 0 190px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+            <div style="display: flex;">
+                <div style="margin-top: 45vh; display: flex; ">
+                    <img style="cursor: pointer;" onclick="show_status7()" src="img/image1.png" width="250px" alt="">
+                    <div style="margin-top: 35px; margin-left: -90px;" id="icon_status7"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- เครื่องซักผ้าถังที่ 4 -->
+        <div style="position: absolute; margin: -35px 0 0 1150px;">
+            <div  id="s8" style=" position: absolute; margin: 370px 0 0 190px;">
+            </div>
+            <div id="area8" style="margin: 400px 0 0 190px; display: flex; justify-content: center; position: absolute; width: 93px; background-color: rgb(162, 250, 255); border-radius: 10px;  "></div>
+            <div style="display: flex;">
+                <div style="margin-top: 45vh; display: flex; ">
+                    <img style="cursor: pointer;" onclick="show_status8()" src="img/image1.png" width="250px" alt="">
+                    <div style="margin-top: 35px; margin-left: -90px;" id="icon_status8"></div>
+                </div>
+            </div>
+        </div>
+
+        
+    
     <script src="script.js"></script>
 </body>
 </html>
